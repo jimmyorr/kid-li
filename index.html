@@ -48,23 +48,28 @@
         }
 
         .gallery img {
-            width: 165px;
-            height: 225px;
-            object-fit: cover;
+            height: 250px;
+            width: auto;
+            object-fit: contain;
             cursor: pointer;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: transform 0.2s ease-in-out;
+            background: rgba(255,255,255,0.2);
         }
 
         .gallery img:hover {
             transform: scale(1.05);
         }
 
-        /* Large board images should have a different aspect ratio */
-        .gallery img.board {
-            width: 300px;
-            height: 200px;
+        /* Boards are very tall, let's give them more height */
+        #board-gallery img {
+            height: 400px;
+        }
+
+        /* Logo and other assets can be smaller */
+        #assets-gallery img {
+            height: 150px;
         }
 
         .pswp__img {
@@ -126,7 +131,7 @@
     <!-- PhotoSwipe Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
