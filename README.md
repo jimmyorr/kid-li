@@ -1,6 +1,6 @@
 # The King Is Dead: Long Island Reskin
 
-This project is a personal board game reskin of "The King Is Dead," themed around Long Island. 
+This project is a personal board game reskin of "The King Is Dead," themed around Long Island.
 
 ## Project Structure
 
@@ -10,6 +10,7 @@ This project is a personal board game reskin of "The King Is Dead," themed aroun
 ## Regions
 
 The game is divided into 8 distinct regions of Long Island:
+
 1. Gravesend
 2. Rockaway
 3. South Shore
@@ -26,4 +27,5 @@ The game is divided into 8 distinct regions of Long Island:
 - **Logo**: A custom crest featuring Long Island icons like the lighthouse, bagels, and seagulls.
 
 ---
-*Created for posterity and safe-keeping on GitHub.*
+
+_Created for posterity and safe-keeping on GitHub._
