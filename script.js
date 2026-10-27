@@ -78,6 +78,8 @@ function initGallery(images, containerId, extraClass = "") {
     imgElement.src = img.src;
     imgElement.alt = img.title;
     imgElement.title = img.title;
+    imgElement.loading = "lazy";
+    imgElement.decoding = "async";
     if (extraClass) imgElement.classList.add(extraClass);
 
     imgElement.onclick = () => openPhotoSwipe(img);
@@ -100,7 +102,7 @@ function openPhotoSwipe(clickedImage) {
     bgOpacity: 0.9,
     showHideOpacity: true,
     getThumbBoundsFn: (index) => {
-      const thumbnail = document.querySelectorAll("img")[index];
+      const thumbnail = document.querySelectorAll(".gallery img")[index];
       const pageYScroll =
         window.pageYOffset || document.documentElement.scrollTop;
       const rect = thumbnail.getBoundingClientRect();
